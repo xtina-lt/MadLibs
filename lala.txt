@@ -1,0 +1,94 @@
+/*
+*CHANGNG STYLE FOR HOLIDAY
+*/
+const styleValues = {
+    christmas: {
+        image: 'mc.png',
+        color: 'green',
+        h1Family: 'Miltonian Tattoo',
+        h2Family: 'Mountains of Christmas',
+    },
+    halloween: {
+        image: "h.jpg",
+        color: 'orange',
+        h1Family: 'Creepster',
+        h2Family: 'Griffy',
+    }
+};
+let holidayStyle = styleValues.halloween
+function changeStyle(holiday){
+    document.querySelector('body').style.backgroundColor = holiday.color
+    document.getElementById('logo').setAttribute("src", holiday.image)
+    document.querySelector('body').style.fontFamily = holiday.h2Family
+    document.querySelector('h1').style.fontFamily = holiday.h1Family
+    document.querySelector('h2').style.fontFamily = holiday.h1Family
+}
+changeStyle(holidayStyle)
+
+
+
+
+
+const madLib = {
+    christmas: {
+        story: `
+            <p>Tonight is the <span class="word">${answer}</span> office holiday party. 
+                I do herby promise that I will not make the same <span class="word">${verb}</span> as last year.
+            </p>
+            <p>
+                When my boss wishes me a Merry <span class="word">${answer}</span>, I will not shout "<span class="word">${quote}</span>"
+                I will not sniff near my boss's wife and ask her why she is marinating in such a <span class="word">${adj}</span> perfume.
+            </p>
+            <p>
+                I will not drink <span class="word">${num}</span> glasses of eggnogg and fall on my <span class="word">${bodyPart}</span>.
+                I will not make photocopies of my <span class="word">${bodyPart}</span> and dance on the <span class="word">${physObject}</span>.
+            </p>
+            <p>
+                This year I promise I will be on my <span class="word">${adj2}</span> behavior, becuase for the love of Pete, I can't keep looking for a new job every New Year's Day🤣!
+            </p>
+            `,
+        image: 'mc.png',
+        color: 'crimson',
+        h1Family: 'Miltonian Tattoo',
+        h2Family: 'Mountains of Christmas',
+        title: `The <span class="word" title="id: answer">${verb[0].toUpperCase() + verb.substring(1)}</span> <span class="word" title="id: answer">${answer}</span> Party`
+    },
+    halloween: {
+        story:`
+            <p>Tonight is <span class="word">${answer}</span> Hallow's Eve. 
+                I do herby promise that I will not <span class="word">${verb}</span> all the candy.
+            </p>
+            <p>
+                When the ghost wishes me a Happy <span class="word">${answer}</span>, I will not shout "<span class="word">${quote}</span>"
+                I will not sniff near the vampire and ask her why she is marinating in such a <span class="word">${adj}</span> perfume.
+            </p>
+            <p>
+                I will eat <span class="word">${num}</span> bags of candy and fall on my <span class="word">${bodyPart}</span>.
+                I will not make photocopies of my <span class="word">${bodyPart}</span> and fly around the <span class="word">${physObject}</span>.
+            </p>
+            <p>
+                This year I promise I will be on my <span class="word">${adj2}</span> behavior, becuase for the love of Pete, I can only haunt for so long🤣!
+            </p>
+            `,
+        image: "h.jpg",
+        color: 'orange',
+        h1Family: 'Creepster',
+        h2Family: 'Griffy',
+        title: `<span class="word" title="id: answer">${verb[0].toUpperCase() + verb.substring(1)}</span> <span class="word" title="id: answer">${answer}</span>`
+    }
+  };
+let holiday = madLib.halloween
+//change title
+document.getElementById('title').innerHTML = holiday.title;
+//change story
+document.getElementById('story').innerHTML = holiday.story;
+//change moral message
+document.getElementById('moral-message').innerHTML = `<span class="italics" title="id: message">"${message}"</span>`;
+//set holiday background color
+document.querySelector('body').style.backgroundColor = holiday.color
+//change font family
+document.querySelector('body').style.fontFamily= holiday.h2Family
+document.querySelector('h1').style.fontFamily= holiday.h1Family
+document.querySelector('h2').style.fontFamily= holiday.h2Family
+//change header image 
+document.getElementById('headerImg').setAttribute("src", holiday.image)

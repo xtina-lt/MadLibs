@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Mountains+of+Christmas&family=Griffy&family=Creepster&display=swap" rel="stylesheet">
+        <title>🎄MadLibs🎄</title>
+    </head>
+    <body>
+        <section id="overlay">
+            <header>
+                <img src="mc.png" alt="Merry Christmas To You" id="logo">
+            <header>
+            <main>
+                <h1>Naughty or Nice MadLibs!</h1>
+                <hr>
+                <form action="story.html" method="get">
+                    <span id="radTitle">Holiday:</span>
+                        <input type="radio" id="radOne" name="answer" value="New Year's" required>
+                        <label for="radOne">New Year</label>
+                        <input type="radio" id="radTwo" name="answer" value="Christmas" required>
+                        <label for="radTwo">Christmas</label>
+                        <br>
+                    <label for="verb">Verb:</label>
+                        <input type="text" id="verb" name="verb" placeholder="mistakes" required>
+                        <br>
+                    <label for="quote">Motivational Quote:</label>
+                        <input type="text" list="quote-choices" id="quote" name="quote" required>
+                        <datalist id="quote-choices">
+                            <option value="Son of a Nutcracker!">Son of a Nutcracker!</option>
+                            <option value="Naughty or Nice">Naughty or Nice</option>
+                            <option value="Grinch Stole Christmas">Grinch Stole Christmas</option>
+                        </datalist>
+                        <br>
+                    <label for="adj">Adjective:</label>
+                        <select id="adj" name="adj" required>
+                            <option value="jolly">jolly</option>
+                            <option value="merry">merry</option>
+                            <option value="jubilant">jubilant</option>
+                        </select>
+                        <br>
+                    <label for="adj2">Adjective 2:</label>
+                        <input type="text" id="adj2" name="adj2" placeholder="best" required>
+                        <br>
+                    <label for="num">Number:</label>
+                        <input type="number" id="num" name="num" required>
+                        <br>
+                    <label for="bodyPart">Body part:</label>
+                        <input type="text" id="bodyPart" name="bodyPart" required>
+                        <br>
+                    <label for="physObject">Object:</label>
+                        <select id="physObject" name="physObject" required>
+                            <option value="table">table</option>
+                            <option value="sleigh">sleigh</option>
+                            <option value="stage">stage</option>
+                        </select>
+                        <br>
+                    <label for="message">Meaningful Message:</label>
+                        <br>
+                        <textarea name="message" id="message" rows="5" cols="30">
+                            Christmas Calories Don't Count! Santa, I'll buy my own presents!
+                        </textarea>
+                    <br>
+                    <input type="submit" value="submit">
+                </form>
+            <main>
+        </section>
+    </body>
+</html>
