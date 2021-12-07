@@ -4,8 +4,8 @@ let holiday = {
         color: 'green',
         h1Family: 'Miltonian Tattoo',
         h2Family: 'Mountains of Christmas',
-        radOneValue: "Christmas Eve",
-        radTwoValue: "New Year's"
+        radOneValue: "Christmas",
+        radTwoValue: "New Year"
     },
     halloween: {
         image: "h.jpg",
